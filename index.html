@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杜文文 | Robotics Engineer</title>
+    <title>杜文文 | 具身智能 / 自动驾驶专家</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
     <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
     <style>
@@ -14,14 +14,14 @@
         }
 
         :root {
-            --bg-primary: #0f0f1a;
-            --bg-secondary: #1a1a2e;
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121f;
             --bg-card: #16162a;
-            --text-primary: #e8e8e8;
-            --text-secondary: #a0a0b0;
-            --accent: #00d9ff;
-            --accent-dim: rgba(0, 217, 255, 0.1);
-            --border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f0f0f0;
+            --text-secondary: #888899;
+            --accent: #00e5a0;
+            --accent-dim: rgba(0, 229, 160, 0.08);
+            --border: rgba(255, 255, 255, 0.06);
         }
 
         body {
@@ -33,7 +33,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -43,8 +43,8 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 15, 26, 0.8);
-            backdrop-filter: blur(10px);
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             z-index: 1000;
             padding: 1rem 0;
@@ -58,7 +58,7 @@
 
         .nav-logo {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--accent);
         }
@@ -86,12 +86,11 @@
             display: flex;
             align-items: center;
             padding-top: 4rem;
-            position: relative;
         }
 
         .hero-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 1fr;
             gap: 4rem;
             align-items: center;
         }
@@ -99,28 +98,30 @@
         .hero-text .greeting {
             font-family: 'JetBrains Mono', monospace;
             color: var(--accent);
-            font-size: 1rem;
-            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             font-weight: 700;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: 1rem;
+            letter-spacing: -0.02em;
         }
 
         .hero-text .title {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
+            line-height: 1.5;
         }
 
         .hero-text .description {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 2.5rem;
-            max-width: 500px;
+            max-width: 520px;
         }
 
         .cta-buttons {
@@ -129,7 +130,7 @@
         }
 
         .btn {
-            padding: 0.8rem 1.8rem;
+            padding: 0.75rem 1.75rem;
             border-radius: 6px;
             font-size: 0.95rem;
             font-weight: 500;
@@ -144,7 +145,7 @@
         }
 
         .btn-primary:hover {
-            background: #00b8d9;
+            background: #00c98c;
             transform: translateY(-2px);
         }
 
@@ -164,19 +165,19 @@
             border-radius: 12px;
             border: 1px solid var(--border);
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
         }
 
         .terminal-header {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 0.75rem 1rem;
             display: flex;
             gap: 0.5rem;
         }
 
         .terminal-dot {
-            width: 12px;
-            height: 12px;
+            width: 11px;
+            height: 11px;
             border-radius: 50%;
         }
 
@@ -187,8 +188,8 @@
         .terminal-body {
             padding: 1.5rem;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            line-height: 1.8;
+            font-size: 0.85rem;
+            line-height: 1.9;
         }
 
         .terminal-line {
@@ -212,7 +213,7 @@
         .cursor {
             display: inline-block;
             width: 8px;
-            height: 16px;
+            height: 15px;
             background: var(--accent);
             animation: blink 1s infinite;
             margin-left: 2px;
@@ -225,7 +226,7 @@
 
         /* Sections */
         section {
-            padding: 6rem 0;
+            padding: 5rem 0;
         }
 
         .section-title {
@@ -238,7 +239,7 @@
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -0.5rem;
+            bottom: -0.6rem;
             left: 0;
             width: 40px;
             height: 3px;
@@ -255,24 +256,24 @@
 
         .about-text p {
             color: var(--text-secondary);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             font-size: 1.05rem;
         }
 
         .about-stats {
             display: grid;
-            gap: 1.5rem;
+            gap: 1.2rem;
         }
 
         .stat-card {
             background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 8px;
+            padding: 1.4rem;
+            border-radius: 10px;
             border: 1px solid var(--border);
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
@@ -280,105 +281,193 @@
 
         .stat-label {
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 0.25rem;
+            font-size: 0.85rem;
+            margin-top: 0.2rem;
+        }
+
+        /* Expertise Section */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .expertise-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .expertise-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .expertise-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-dim);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+        }
+
+        .expertise-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .expertise-card p {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -2rem;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-primary);
+            border: 3px solid var(--accent);
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-company {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-role {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .timeline-description ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-description li {
+            padding-left: 1.2rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-description li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
         }
 
         /* Skills Section */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
         }
 
         .skill-category {
             background: var(--bg-card);
-            padding: 2rem;
+            padding: 1.8rem;
             border-radius: 12px;
             border: 1px solid var(--border);
         }
 
         .skill-category h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
             color: var(--accent);
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.6rem;
-        }
-
-        .skill-tag {
-            padding: 0.4rem 0.9rem;
-            background: var(--accent-dim);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--accent);
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            padding: 2rem;
-            transition: all 0.3s;
-        }
-
-        .project-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-4px);
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .project-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--accent-dim);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-        }
-
-        .project-description {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
             gap: 0.5rem;
         }
 
-        .project-tech span {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
+        .skill-tag {
+            padding: 0.35rem 0.85rem;
+            background: var(--accent-dim);
+            border: 1px solid rgba(0, 229, 160, 0.15);
+            border-radius: 20px;
+            font-size: 0.82rem;
+            color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Education Section */
+        .education-item {
+            background: var(--bg-card);
+            padding: 1.8rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.2rem;
+        }
+
+        .education-school {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-degree {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .education-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
         }
 
         /* Contact Section */
@@ -390,19 +479,44 @@
 
         .contact-content p {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 2.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-item a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 1.2rem;
         }
 
         .social-link {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 50%;
@@ -426,14 +540,14 @@
             border-top: 1px solid var(--border);
             text-align: center;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 2.5rem;
             }
 
             .hero-text h1 {
@@ -444,8 +558,22 @@
                 grid-template-columns: 1fr;
             }
 
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
             .nav-links {
                 display: none;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
             }
 
             .container {
@@ -460,10 +588,11 @@
         <div class="container nav-content">
             <div class="nav-logo">duwenwen.dev</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#expertise">专长</a></li>
+                <li><a href="#experience">经历</a></li>
+                <li><a href="#skills">技术栈</a></li>
+                <li><a href="#contact">联系</a></li>
             </ul>
         </div>
     </nav>
@@ -474,13 +603,13 @@
             <div class="hero-text">
                 <div class="greeting">// Hello World</div>
                 <h1>杜文文</h1>
-                <div class="title">Robotics Engineer</div>
+                <div class="title">具身智能 / 自动驾驶技术专家</div>
                 <p class="description">
-                    专注于机器人技术与智能系统研发，致力于将前沿技术转化为实际应用。
+                    9年自动驾驶与机器人研发经验，曾任职于Momenta、轻舟智航、地平线，现就职于字节跳动火山引擎，负责具身智能技术团队从0到1搭建。
                 </p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#experience" class="btn btn-primary">查看经历</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
                 </div>
             </div>
             <div class="terminal">
@@ -494,14 +623,14 @@
                         <span class="terminal-prompt">$</span>
                         <span class="terminal-text">whoami</span>
                     </div>
-                    <div class="terminal-output">Robotics Engineer @ ByteDance</div>
+                    <div class="terminal-output">具身智能技术负责人 @ ByteDance</div>
                     <div class="terminal-line" style="margin-top: 1rem;">
                         <span class="terminal-prompt">$</span>
-                        <span class="terminal-text">cat skills.txt</span>
+                        <span class="terminal-text">cat focus.txt</span>
                     </div>
-                    <div class="terminal-output">C++ / Python / ROS</div>
-                    <div class="terminal-output">Machine Learning / Computer Vision</div>
-                    <div class="terminal-output">Embedded Systems / Control Systems</div>
+                    <div class="terminal-output">Embodied AI / VLA / World Model</div>
+                    <div class="terminal-output">Autonomous Driving / BEV / SLAM</div>
+                    <div class="terminal-output">Robot Learning / Manipulation</div>
                     <div class="terminal-line" style="margin-top: 1rem;">
                         <span class="terminal-prompt">$</span>
                         <span class="cursor"></span>
@@ -514,32 +643,138 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">关于我</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        我是一名机器人工程师，目前就职于字节跳动创造力服务平台，专注于汽车产品研发与机器人工程领域。
+                        我是一名拥有9年自动驾驶与机器人研发经验的技术专家，毕业于中国科学技术大学计算机科学与技术专业（硕士）。
                     </p>
                     <p>
-                        我热衷于探索机器人技术的前沿应用，从感知系统到运动控制，从嵌入式开发到智能算法，
-                        致力于打造更加智能、高效的机器人系统。
+                        我的技术生涯起步于Momenta，从0到1参与了高阶泊车产品的研发与量产落地，包括记忆泊车、AVP等核心功能，产品已交付于比亚迪仰望、上汽智己等知名车型。
                     </p>
                     <p>
-                        在工作之余，我喜欢参与开源项目，探索新技术，并与社区分享我的知识和经验。
+                        之后在轻舟智航担任感知架构师，负责BEV感知、多传感器融合等技术方向，并主导了广汽埃安NOA行车功能的量产交付。在地平线机器人实验室，我转向具身智能领域，负责Manipulation、Locomotion、VLN导航等方向的早期探索。
+                    </p>
+                    <p>
+                        现就职于字节跳动火山引擎，主导具身智能技术团队从0到1搭建，聚焦于基于VLM的多模态大脑Agent、VLA模型、通用操作世界模型等前沿方向。
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label">年行业经验</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">人团队管理</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">10+</div>
-                        <div class="stat-label">Open Source Repos</div>
+                        <div class="stat-label">量产项目交付</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+        <div class="container">
+            <h2 class="section-title">核心专长</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 10v6m11-11h-6m-10 0H1"/>
+                        </svg>
+                    </div>
+                    <h3>具身智能</h3>
+                    <p>从0到1完整负责具身R&D团队搭建和产品落地。具身Agent架构设计、多模态交互模型、世界模型、VLA全栈操作、RL运控、VLN导航等方向有丰富研发经验。</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>自动驾驶</h3>
+                    <p>精通智驾感知/E2E算法，对自动驾驶系统有全面的认识和理解。熟悉E2E、VLA、World Model等智驾领域最新进展和落地工作。</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>团队管理</h3>
+                    <p>3年以上技术团队管理经验，有比较好的技术视野。在智驾、具身等软硬件结合产品研发领域，有丰富的跨团队实践经验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025.09 - 至今</div>
+                    <div class="timeline-company">字节跳动 · 火山引擎</div>
+                    <div class="timeline-role">具身智能技术负责人（30人+）</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>主导火山具身智能团队从0到1搭建，负责整体研发团队管理工作</li>
+                            <li>研发基于豆包VLM的多模态大脑Agent、VLA模型、通用操作世界模型、VLN导航、RL运控等方向</li>
+                            <li>负责赛力斯战略合作项目落地，包括双足人形服务机器人、车载陪伴机器狗等方向</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024.03 - 2025.08</div>
+                    <div class="timeline-company">地平线机器人</div>
+                    <div class="timeline-role">高级研发专家 · 具身智能架构师（10人+）</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>参与地平线机器人实验室的团队搭建工作，负责操作Manipulation、运控Locomotion、视觉语义导航VLN、仿真等方向的早期探索</li>
+                            <li>负责具身在物流、工厂工业场景下的研发落地工作</li>
+                            <li>负责智驾主线泊车方案研发和量产交付，泊车BEV方案上线&迭代</li>
+                            <li>泊车IP交付BYD海洋系列，在APA、记忆泊车等关键性能指标上超越BYD腾势等同级竞品</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023.04 - 2024.03</div>
+                    <div class="timeline-company">轻舟智航</div>
+                    <div class="timeline-role">感知部门 · 架构师</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>作为架构师负责感知部门技术架构的设计和研发推进，包括模型、评测、数据等工作</li>
+                            <li>相关研发方向包括：BEV感知、多传感器融合、端到端预研等</li>
+                            <li>负责泊车算法架构设计，以及量产落地工作</li>
+                            <li>量产项目交付：广汽埃安某车型行车功能（NOA、LCC等）交付；理想Pro平台行泊车功能阶段性交付</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019.06 - 2023.04</div>
+                    <div class="timeline-company">Momenta</div>
+                    <div class="timeline-role">高级研发工程师 · 泊车产品线算法专家</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>负责泊车产品线的记忆泊车、AVP等功能的算法架构设计和研发</li>
+                            <li>从0到1完成Momenta高阶泊车产品研发，包括记忆泊车、MEB等功能</li>
+                            <li>记忆泊车功能已交付于比亚迪仰望车型、上汽智己汽车等，在行业内具备优秀的产品竞争力</li>
+                            <li>负责Momenta整体Lidar感知算法，包括障碍物检测、分割、自动标注等工作</li>
+                            <li>搭建了基于transformer网络的深度学习多传感器融合架构，也是Momenta端到端方案的基础架构</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -549,101 +784,54 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">技术栈</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming</h3>
+                    <h3>具身智能 / 机器人</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">ROS</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Embodied AI</span>
+                        <span class="skill-tag">VLA</span>
+                        <span class="skill-tag">World Model</span>
+                        <span class="skill-tag">VLN</span>
+                        <span class="skill-tag">Manipulation</span>
+                        <span class="skill-tag">Locomotion</span>
+                        <span class="skill-tag">Robot Learning</span>
+                        <span class="skill-tag">RL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Robotics</h3>
+                    <h3>自动驾驶 / 感知</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Motion Planning</span>
+                        <span class="skill-tag">BEV</span>
+                        <span class="skill-tag">Multi-Sensor Fusion</span>
                         <span class="skill-tag">SLAM</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">Sensor Fusion</span>
-                        <span class="skill-tag">Control Systems</span>
+                        <span class="skill-tag">Lidar Perception</span>
+                        <span class="skill-tag">E2E</span>
+                        <span class="skill-tag">Autonomous Driving</span>
+                        <span class="skill-tag">Parking</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
+                    <h3>算法 / 框架</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Gazebo</span>
-                        <span class="skill-tag">MoveIt</span>
-                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Transformer</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Multi-modal</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Autonomous Navigation System</div>
-                        <div class="project-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M12 2v10l7 5"/>
-                            </svg>
-                        </div>
+                <div class="skill-category">
+                    <h3>教育背景</h3>
+                    <div class="education-item" style="margin-bottom: 0.8rem; padding: 1.2rem;">
+                        <div class="education-school">中国科学技术大学</div>
+                        <div class="education-degree">计算机科学与技术 · 硕士</div>
+                        <div class="education-date">2016.09 - 2019.06</div>
                     </div>
-                    <p class="project-description">
-                        基于深度学习的自主导航系统，实现机器人在复杂环境中的路径规划与避障。
-                    </p>
-                    <div class="project-tech">
-                        <span>ROS</span>
-                        <span>C++</span>
-                        <span>PyTorch</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Robotic Arm Control</div>
-                        <div class="project-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2v20M2 12h20"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        六轴机械臂运动控制与轨迹规划系统，支持复杂操作任务的精准执行。
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>MoveIt</span>
-                        <span>RTOS</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-title">Perception Pipeline</div>
-                        <div class="project-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        多传感器融合感知系统，整合激光雷达、相机和IMU数据，实现环境理解与物体识别。
-                    </p>
-                    <div class="project-tech">
-                        <span>OpenCV</span>
-                        <span>Point Cloud</span>
-                        <span>SLAM</span>
+                    <div class="education-item" style="margin-bottom: 0; padding: 1.2rem;">
+                        <div class="education-school">中国科学技术大学</div>
+                        <div class="education-degree">仪器科学与技术 · 学士</div>
+                        <div class="education-date">2012.09 - 2016.06</div>
                     </div>
                 </div>
             </div>
@@ -654,27 +842,35 @@
     <section id="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title" style="text-align: center;">Get In Touch</h2>
+                <h2 class="section-title" style="text-align: center;">联系我</h2>
                 <p>
-                    我对新的想法和机会持开放态度。无论是合作项目、技术交流，还是只是打个招呼，都欢迎联系我。
+                    我对新的想法和机会持开放态度。无论是技术交流、合作项目，还是职业机会，都欢迎联系我。
                 </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:1455112695@qq.com">1455112695@qq.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>18355180339</span>
+                    </div>
+                </div>
                 <div class="social-links">
-                    <a href="mailto:duwenwen@bytedance.com" class="social-link" title="Email">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <a href="mailto:1455112695@qq.com" class="social-link" title="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                             <polyline points="22,6 12,13 2,6"/>
                         </svg>
                     </a>
-                    <a href="https://github.com/" class="social-link" title="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <a href="https://github.com/halostorm" class="social-link" title="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" title="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V9h4v1.5A6 6 0 0 1 16 8z"/>
-                            <rect x="2" y="9" width="4" height="12"/>
-                            <circle cx="4" cy="4" r="2"/>
                         </svg>
                     </a>
                 </div>
@@ -685,7 +881,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Du Wenwen. Built with passion.</p>
+            <p>&copy; 2026 Du Wenwen. All rights reserved.</p>
         </div>
     </footer>
 
@@ -700,29 +896,6 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                }
-            });
-        });
-
-        // Active nav link on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.style.color = 'var(--accent)';
-                } else {
-                    link.style.color = '';
                 }
             });
         });
