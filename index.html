@@ -159,6 +159,44 @@
             color: var(--accent);
         }
 
+        /* Hero Right */
+        .hero-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .avatar-card {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        .avatar-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 1.2rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+
         /* Terminal Window */
         .terminal {
             background: var(--bg-card);
@@ -612,28 +650,35 @@
                     <a href="#contact" class="btn btn-secondary">联系我</a>
                 </div>
             </div>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-dot red"></div>
-                    <div class="terminal-dot yellow"></div>
-                    <div class="terminal-dot green"></div>
+            <div class="hero-right">
+                <div class="avatar-card">
+                    <img src="assets/avatar.png" alt="杜文文" class="avatar-img">
+                    <div class="avatar-overlay">
+                        <span>Embodied AI</span>
+                    </div>
                 </div>
-                <div class="terminal-body">
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-text">whoami</span>
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
                     </div>
-                    <div class="terminal-output">具身智能技术负责人 @ ByteDance</div>
-                    <div class="terminal-line" style="margin-top: 1rem;">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-text">cat focus.txt</span>
-                    </div>
-                    <div class="terminal-output">Embodied AI / VLA / World Model</div>
-                    <div class="terminal-output">Autonomous Driving / BEV / SLAM</div>
-                    <div class="terminal-output">Robot Learning / Manipulation</div>
-                    <div class="terminal-line" style="margin-top: 1rem;">
-                        <span class="terminal-prompt">$</span>
-                        <span class="cursor"></span>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-text">whoami</span>
+                        </div>
+                        <div class="terminal-output">具身智能技术负责人 @ ByteDance</div>
+                        <div class="terminal-line" style="margin-top: 0.8rem;">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-text">cat focus.txt</span>
+                        </div>
+                        <div class="terminal-output">Embodied AI / VLA / World Model</div>
+                        <div class="terminal-output">Autonomous Driving / BEV / SLAM</div>
+                        <div class="terminal-line" style="margin-top: 0.8rem;">
+                            <span class="terminal-prompt">$</span>
+                            <span class="cursor"></span>
+                        </div>
                     </div>
                 </div>
             </div>
