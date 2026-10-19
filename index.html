@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>杜文文 | 具身智能 / 自动驾驶 架构师、高级研发专家</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
-    <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
+    <link rel="stylesheet"
+        href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
     <style>
         * {
             margin: 0;
@@ -219,9 +222,17 @@
             border-radius: 50%;
         }
 
-        .terminal-dot.red { background: #ff5f56; }
-        .terminal-dot.yellow { background: #ffbd2e; }
-        .terminal-dot.green { background: #27c93f; }
+        .terminal-dot.red {
+            background: #ff5f56;
+        }
+
+        .terminal-dot.yellow {
+            background: #ffbd2e;
+        }
+
+        .terminal-dot.green {
+            background: #27c93f;
+        }
 
         .terminal-body {
             padding: 1.5rem;
@@ -258,8 +269,16 @@
         }
 
         @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
         }
 
         /* Sections */
@@ -300,7 +319,8 @@
 
         .about-stats {
             display: grid;
-            gap: 1.2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
         }
 
         .stat-card {
@@ -620,6 +640,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -641,9 +662,9 @@
             <div class="hero-text">
                 <div class="greeting">// Hello World</div>
                 <h1>杜文文</h1>
-                <div class="title">具身智能 / 自动驾驶技术专家</div>
+                <div class="title">具身智能架构师、技术负责人</div>
                 <p class="description">
-                    7年自动驾驶与机器人研发经验，曾任职于Momenta、轻舟智航、地平线，现就职于字节跳动火山引擎，负责veRobot具身智能技术团队。
+                    现就职于字节跳动火山引擎，管理veRobot具身智能技术团队，负责具身智能相关技术的研发和落地探索。
                 </p>
                 <div class="cta-buttons">
                     <a href="#experience" class="btn btn-primary">查看经历</a>
@@ -691,17 +712,13 @@
             <h2 class="section-title">关于我</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        我是一名拥有9年自动驾驶与机器人研发经验的技术专家，毕业于中国科学技术大学计算机科学与技术专业（硕士）。
+                    <p class="description">
+                        9年自动驾驶与机器人研发经验，毕业于中国科学技术大学，曾任职于Momenta、轻舟智航、地平线，
+                        现就职于字节跳动火山引擎，管理veRobot具身智能技术团队。
                     </p>
-                    <p>
-                        我的技术生涯起步于Momenta，负责3D感知/融合算法，并且从0到1参与了行泊车产品的研发与量产落地，包括城市NOA、APA泊车，ADAS等核心功能，产品已交付于比亚迪仰望、上汽智己等知名车型。
-                    </p>
-                    <p>
-                        之后在轻舟智航担任感知架构师，负责BEV感知、多传感器融合等技术方向，并主导了广汽埃安，理想Pro平台NOA功能的量产交付。在地平线机器人实验室，我转向具身智能领域，负责具身操作、运控、VLN导航等方向的早期探索。
-                    </p>
-                    <p>
-                        现就职于字节跳动火山引擎，管理具身智能技术团队，聚焦于基于VLM的多模态交互大脑、具身Agentic系统、VLA模型/世界模型、人形运控等前沿方向。
+                    <p class="description">
+                        技术视野覆盖具身智能和自动驾驶，聚焦于基于VLM的多模态交互大脑、具身Agentic系统、VLA模型/世界模型、人形运控等前沿方向研发。
+                        能力兼具算法攻坚、工程落地、量产交付。
                     </p>
                 </div>
                 <div class="about-stats">
@@ -722,6 +739,7 @@
         </div>
     </section>
 
+
     <!-- Expertise Section -->
     <section id="expertise">
         <div class="container">
@@ -729,37 +747,47 @@
             <div class="expertise-grid">
                 <div class="expertise-card">
                     <div class="expertise-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M12 1v6m0 10v6m11-11h-6m-10 0H1"/>
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <circle cx="24" cy="24" r="7" />
+                            <circle cx="24" cy="24" r="18" stroke-dasharray="5 4" />
+                            <path d="M24 3v8M24 37v8M3 24h8M37 24h8M9 9l6 6M33 33l6 6M39 9l-6 6M15 33l-6 6" />
                         </svg>
                     </div>
                     <h3>具身智能</h3>
-                    <p>从0到1负责过具身研发团队搭建，长期管理核心技术团队（50人+），在具身算法方向有丰富的研发经验，包括：多模态交互模型，Agentic系统，世界模型/VLA，机器人RL运控等方向。熟悉机器人系统架构设计和产品解决方案，在销售服务场景，工业场景均有商业落地经验。</p>
+                    <p>从 0 到 1 搭建研发团队，推进机器人智能大脑、通用操作与导航运控方向研发。熟悉机器人架构和产品解决方案，在销售服务场景，工业场景均有商业落地经验。</p>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <path d="M8 30 13 17h22l5 13M5 30h38v10H5z" />
+                            <circle cx="13" cy="40" r="3" />
+                            <circle cx="35" cy="40" r="3" />
+                            <path d="M18 23h12M24 8v6M9 11l5 5M39 11l-5 5" />
                         </svg>
                     </div>
                     <h3>自动驾驶</h3>
-                    <p>：熟悉智驾感知/E2E算法，对于自动驾驶系统有比较全面的认识和理解，熟悉智驾/机器人相关传感器特性，熟悉E2E、VLA、World Model等智驾领域最新进展和落地工作，了解头部行业动态，人脉丰富。</p>
+                    <p>具备泊车、行车、感知融合及端到端方向经验，贯穿模型、评测、部署与量产交付。了解头部行业动态，人脉丰富。</p>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <circle cx="24" cy="13" r="5" />
+                            <circle cx="10" cy="32" r="5" />
+                            <circle cx="38" cy="32" r="5" />
+                            <path d="M24 18v7M10 27v-3h28v3M15 32h18" />
                         </svg>
                     </div>
                     <h3>团队管理</h3>
-                    <p>3年以上技术团队管理经验，个人有比较好的技术视野，了解行业前沿进展；同时在算法研发攻坚、工程落地方面有比较资深的带团队经验；在智驾、具身等软硬件结合产品研发领域，有丰富的跨团队实践经验。</p>
+                    <p>长期管理核心技术团队，兼顾研发方向判断、人才梯队、跨团队协作与复杂项目落地。</p>
                 </div>
             </div>
         </div>
+
     </section>
+
 
     <!-- Experience Section -->
     <section id="experience">
@@ -773,7 +801,8 @@
                     <div class="timeline-role">具身智能技术负责人（50人+）</div>
                     <div class="timeline-description">
                         <ul>
-                            <li>主导火山具身智能团队从0到1搭建，负责整体研发团队管理工作。研发基于豆包VLM的多模态交互大脑，具身Agentic系统，VLA模型、通用操作世界模型、VLN导航，RL运控等方向。</li>
+                            <li>主导火山具身智能团队从0到1搭建，负责整体研发团队管理工作。研发基于豆包VLM的多模态交互大脑，具身Agentic系统，VLA模型、通用操作世界模型、VLN导航，RL运控等方向。
+                            </li>
                             <li>商业落地方面，负责数个战略项目的落地（5亿级规模），包括人形销售服务机器人，导购机器人，家庭陪伴机器狗等。</li>
                         </ul>
                     </div>
@@ -785,8 +814,10 @@
                     <div class="timeline-role">具身智能团队架构师</div>
                     <div class="timeline-description">
                         <ul>
-                            <li>参与地平线机器人实验室的团队搭建工作，包括操作模型、RL运控、视觉语义导航VLN、仿真等方向的早期探索。参与研发管理工作，同时负责具身在物流、工厂工业场景下的研发落地工作。</li>
-                            <li>负责智驾主线泊车方案研发和量产交付，包括模型、评测、部署等技术方向，具体成果包括：泊车BEV方案上线\&迭代，BEV感知融合方案，完成了基于J5平台的高阶泊车方案上车。泊车IP交付BYD海洋系列</li>
+                            <li>参与地平线机器人实验室的团队搭建工作，包括操作模型、RL运控、视觉语义导航VLN、仿真等方向的早期探索。参与研发管理工作，同时负责具身在物流、工厂工业场景下的研发落地工作。
+                            </li>
+                            <li>负责智驾主线泊车方案研发和量产交付，包括模型、评测、部署等技术方向，具体成果包括：泊车BEV方案上线\&迭代，BEV感知融合方案，完成了基于J5平台的高阶泊车方案上车。泊车IP交付BYD海洋系列
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -828,7 +859,7 @@
                 <div class="skill-category">
                     <h3>具身智能 / 机器人</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Embodied AI</span>
+                        <span class="skill-tag">Agentic AI</span>
                         <span class="skill-tag">VLA</span>
                         <span class="skill-tag">World Model</span>
                         <span class="skill-tag">VLN</span>
@@ -842,12 +873,11 @@
                     <h3>自动驾驶 / 感知</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">BEV</span>
-                        <span class="skill-tag">Multi-Sensor Fusion</span>
-                        <span class="skill-tag">SLAM</span>
-                        <span class="skill-tag">Lidar Perception</span>
                         <span class="skill-tag">E2E</span>
+                        <span class="skill-tag">Multi-Sensor Fusion</span>
+                        <span class="skill-tag">3D Perception</span>
+                        <span class="skill-tag">SLAM</span>
                         <span class="skill-tag">Autonomous Driving</span>
-                        <span class="skill-tag">Parking</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -887,29 +917,43 @@
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
                         <a href="mailto:1455112695@qq.com">1455112695@qq.com</a>
                     </div>
                     <div class="contact-item">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                         <span>+86 18355180339</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>halostorm</span>
                     </div>
                 </div>
                 <div class="social-links">
                     <a href="mailto:1455112695@qq.com" class="social-link" title="Email">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </a>
                     <a href="https://github.com/halostorm" class="social-link" title="GitHub">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                         </svg>
                     </a>
                 </div>
@@ -940,4 +984,5 @@
         });
     </script>
 </body>
+
 </html>
