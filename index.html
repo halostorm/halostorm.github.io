@@ -123,8 +123,53 @@
         .hero-text .description {
             color: var(--text-secondary);
             font-size: 1.05rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.75rem;
             max-width: 520px;
+        }
+
+        /* Core Capability Matrix */
+        .capability-matrix {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.65rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .capability-tag {
+            min-width: 0;
+            min-height: 74px;
+            padding: 0.75rem 0.65rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.55rem;
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+        }
+
+        .capability-tag:hover {
+            background: var(--accent-dim);
+            border-color: rgba(0, 229, 160, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .capability-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+            flex: 0 0 auto;
+        }
+
+        .capability-name {
+            font-size: 0.78rem;
+            font-weight: 500;
+            line-height: 1.25;
+            white-space: nowrap;
         }
 
         .cta-buttons {
@@ -612,6 +657,20 @@
                 font-size: 2.5rem;
             }
 
+            .capability-matrix {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0.6rem;
+            }
+
+            .capability-tag {
+                min-height: 68px;
+                padding: 0.7rem;
+            }
+
+            .capability-name {
+                font-size: 0.82rem;
+            }
+
             .about-content {
                 grid-template-columns: 1fr;
             }
@@ -664,8 +723,34 @@
                 <h1>杜文文</h1>
                 <div class="title">具身智能架构师、技术负责人</div>
                 <p class="description">
-                    现就职于字节跳动火山引擎，管理veRobot具身智能技术团队，负责具身智能相关技术的研发和落地探索。
+                    现就职于字节跳动火山引擎，管理veRobot具身智能技术团队，负责具身智能相关的产品研发、技术落地探索。
                 </p>
+                <div class="capability-matrix" aria-label="核心能力">
+                    <div class="capability-tag">
+                        <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                            <path d="M4 15.5 6.5 9h11l2.5 6.5M3 15.5h18v4H3z"/><circle cx="7" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/><path d="M9 12h6M12 4v3M7 5.5 9 8M17 5.5 15 8"/>
+                        </svg>
+                        <span class="capability-name">自动驾驶</span>
+                    </div>
+                    <div class="capability-tag">
+                        <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                            <rect x="6" y="5" width="12" height="11" rx="2"/><circle cx="9.5" cy="10" r="1"/><circle cx="14.5" cy="10" r="1"/><path d="M9 13.5h6M12 2v3M8 16v3M16 16v3M5 9H3M21 9h-2"/>
+                        </svg>
+                        <span class="capability-name">具身智能</span>
+                    </div>
+                    <div class="capability-tag">
+                        <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                            <circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+                        </svg>
+                        <span class="capability-name">大模型算法</span>
+                    </div>
+                    <div class="capability-tag">
+                        <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                            <circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c.5-3.4 2.2-5 5-5s4.5 1.6 5 5M13.5 15c1-.9 2.1-1.3 3.5-1.3 2.3 0 3.7 1.3 4 4"/>
+                        </svg>
+                        <span class="capability-name">技术管理</span>
+                    </div>
+                </div>
                 <div class="cta-buttons">
                     <a href="#experience" class="btn btn-primary">查看经历</a>
                     <a href="#contact" class="btn btn-secondary">联系我</a>
@@ -673,10 +758,7 @@
             </div>
             <div class="hero-right">
                 <div class="avatar-card">
-                    <img src="assets/avatar.png" alt="杜文文" class="avatar-img">
-                    <div class="avatar-overlay">
-                        <span>Embodied AI</span>
-                    </div>
+                    <img src="assets/avatar.jpg" alt="杜文文" class="avatar-img">
                 </div>
                 <div class="terminal">
                     <div class="terminal-header">
@@ -689,13 +771,13 @@
                             <span class="terminal-prompt">$</span>
                             <span class="terminal-text">whoami</span>
                         </div>
-                        <div class="terminal-output">具身智能技术负责人 @ ByteDance</div>
+                        <div class="terminal-output">Head of Embodied AI Team @ ByteDance</div>
                         <div class="terminal-line" style="margin-top: 0.8rem;">
                             <span class="terminal-prompt">$</span>
                             <span class="terminal-text">cat focus.txt</span>
                         </div>
-                        <div class="terminal-output">Embodied AI / VLA / World Model</div>
-                        <div class="terminal-output">Autonomous Driving / BEV / E2E</div>
+                        <div class="terminal-output">Embodied AI:  Agentic / VLA / World Model</div>
+                        <div class="terminal-output">Autonomous Driving:  Sensors / BEV / E2E</div>
                         <div class="terminal-line" style="margin-top: 0.8rem;">
                             <span class="terminal-prompt">$</span>
                             <span class="cursor"></span>
@@ -714,7 +796,7 @@
                 <div class="about-text">
                     <p class="description">
                         9年自动驾驶与机器人研发经验，毕业于中国科学技术大学，曾任职于Momenta、轻舟智航、地平线，
-                        现就职于字节跳动火山引擎，管理veRobot具身智能技术团队。
+                        现就职于字节跳动火山引擎，负责具身智能研发工作。
                     </p>
                     <p class="description">
                         技术视野覆盖具身智能和自动驾驶，聚焦于基于VLM的多模态交互大脑、具身Agentic系统、VLA模型/世界模型、人形运控等前沿方向研发。

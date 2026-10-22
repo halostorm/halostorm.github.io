@@ -1,0 +1,138 @@
+{
+  "src": "/Users/bytedance/Documents/halostorm.github.io/index.html",
+  "url": "file:///Users/bytedance/Documents/halostorm.github.io/index.html",
+  "outdir": "/Users/bytedance/Documents/halostorm.github.io/_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "screenshot": "/Users/bytedance/Documents/halostorm.github.io/_shots/index_desktop.jpg",
+      "screenshotBytes": 189950,
+      "truncated": false,
+      "structure": {
+        "title": "杜文文 | 具身智能 / 自动驾驶 架构师、高级研发专家",
+        "firstH1": "杜文文",
+        "viewport": {
+          "w": 1440,
+          "h": 761
+        },
+        "fullpage": {
+          "w": 1440,
+          "h": 4476
+        },
+        "counts": {
+          "section": 6,
+          "h1": 1,
+          "h2": 5,
+          "img": 1,
+          "canvas": 0,
+          "svg": 15,
+          "links": 10,
+          "buttons": 0
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "reportSource": "cdp"
+    },
+    "mobile": {
+      "slices": [
+        "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p1of3.jpg",
+        "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p2of3.jpg",
+        "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p3of3.jpg"
+      ],
+      "sliceHint": "按顺序 Read slices 里的各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "杜文文 | 具身智能 / 自动驾驶 架构师、高级研发专家",
+        "firstH1": "杜文文",
+        "viewport": {
+          "w": 500,
+          "h": 705
+        },
+        "fullpage": {
+          "w": 500,
+          "h": 6693
+        },
+        "counts": {
+          "section": 6,
+          "h1": 1,
+          "h2": 5,
+          "img": 1,
+          "canvas": 0,
+          "svg": 15,
+          "links": 10,
+          "buttons": 0
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "reportSource": "cdp"
+    }
+  },
+  "engine": "chrome_cli",
+  "chromiumExec": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "engineDegraded": true,
+  "engineDegradedReason": "playwright 未装",
+  "elapsedSec": 13.46,
+  "schemaVersion": 2,
+  "status": "pass",
+  "engineInfo": {
+    "name": "chrome_cli",
+    "degraded": true,
+    "degradedReasons": [
+      "playwright 未装"
+    ]
+  },
+  "input": {
+    "original": "/Users/bytedance/Documents/halostorm.github.io/index.html",
+    "resolvedPath": "/Users/bytedance/Documents/halostorm.github.io/index.html",
+    "baseUrl": "file:///Users/bytedance/Documents/halostorm.github.io/index.html",
+    "protocol": "file",
+    "cwd": "/Users/bytedance/Doubao/chats/2026-10-22/new-chat",
+    "mediaMode": {
+      "reducedMotion": true
+    }
+  },
+  "artifacts": {
+    "screenshots": [
+      {
+        "viewport": "desktop",
+        "path": "/Users/bytedance/Documents/halostorm.github.io/_shots/index_desktop.jpg",
+        "size": 189950,
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      },
+      {
+        "viewport": "mobile",
+        "tiles": [
+          "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p1of3.jpg",
+          "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p2of3.jpg",
+          "/Users/bytedance/Documents/halostorm.github.io/_shots/index_mobile_p3of3.jpg"
+        ],
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      }
+    ]
+  },
+  "summary": {
+    "blocker": 0,
+    "error": 0,
+    "warning": 0,
+    "info": 0
+  },
+  "findings": [],
+  "prioritizedActions": [],
+  "reportPath": "/Users/bytedance/Documents/halostorm.github.io/_shots/report.json"
+}
